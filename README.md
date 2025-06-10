@@ -25,6 +25,18 @@ This project is a simple Spring Boot RESTful web service that allows you to:  - 
 
 ---
 
+## ⚙️ Configuration
+
+This project uses a separate example properties file to avoid exposing sensitive data.
+
+> 🛡️ **Important:**  
+> Copy `application-example.properties` to `application.properties` and fill in your actual database credentials.
+
+```bash
+cp src/main/resources/application-example.properties src/main/resources/application.properties
+
+---
+
 ## 📦 API Endpoints
 
 | Method | Endpoint           | Description          |
@@ -46,4 +58,6 @@ This project is a simple Spring Boot RESTful web service that allows you to:  - 
   "email": "yadav.pardum360@gmail.com",
   "mobile": 1800025482
 }
+
+
 
