@@ -1,5 +1,7 @@
 package fed.in.service.impl;
 
+import fed.in.DTOs.UserRequestDto;
+import fed.in.DTOs.UserResponseDto;
 import fed.in.entity.User;
 import fed.in.repository.UserRepo;
 import fed.in.service.UserService;
@@ -10,30 +12,30 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
-    @Autowired
-    private UserRepo userRepo;
+
 
     @Override
-    public void saveUser() {
-    }
-
-    @Override
-    public User getUser(Long id) {
+    public UserResponseDto createUser(UserRequestDto dto) {
         return null;
     }
 
     @Override
-    public List<User> getAllUser() {
+    public List<UserResponseDto> getAllUsers() {
         return List.of();
     }
 
     @Override
-    public String registerUser(User user) {
-        return "";
+    public UserResponseDto getUserById(Long id) {
+        return null;
     }
 
     @Override
-    public String UpdateUser(Long id, User user) {
-        return "";
+    public UserResponseDto updateUser(Long id, UserRequestDto dto) {
+        return null;
+    }
+
+    @Override
+    public void deleteUser(Long id) {
+
     }
 }
