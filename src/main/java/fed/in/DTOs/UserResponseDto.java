@@ -1,9 +1,7 @@
 package fed.in.DTOs;
 
-import lombok.AllArgsConstructor;
-;
 
-    @AllArgsConstructor
+
     public class UserResponseDto {
         private Long id;
         private String name;
