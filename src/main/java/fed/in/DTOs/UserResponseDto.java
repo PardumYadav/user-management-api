@@ -1,13 +1,18 @@
 package fed.in.DTOs;
 
 
+import java.io.Serializable;
 
-    public class UserResponseDto {
+public class UserResponseDto implements  Serializable {
         private Long id;
         private String name;
         private String lastName;
         private String email;
         private Long mobile;
+
+        public  UserResponseDto(){
+
+        }
 
         public UserResponseDto(Long id, String name, String lastName, String email, Long mobile) {
             this.id = id;
@@ -17,9 +22,11 @@ package fed.in.DTOs;
             this.mobile = mobile;
         }
 
+    public Long getMobile() {
+        return mobile;
+    }
 
-
-        public void setMobile(Long mobile) {
+    public void setMobile(Long mobile) {
         this.mobile = mobile;
     }
 

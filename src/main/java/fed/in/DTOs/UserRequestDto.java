@@ -1,14 +1,23 @@
 package fed.in.DTOs;
 
-import lombok.Data;
+import java.io.Serializable;
 
 
-public class UserRequestDto {
+public class UserRequestDto implements Serializable {
     private String name;
     private String lastName;
     private String email;
     private Long mobile;
 
+    public UserRequestDto() {
+    }
+
+    public UserRequestDto(String name, String lastName, String email, Long mobile) {
+        this.name = name;
+        this.lastName = lastName;
+        this.email = email;
+        this.mobile = mobile;
+    }
 
     public Long getMobile() {
         return mobile;
