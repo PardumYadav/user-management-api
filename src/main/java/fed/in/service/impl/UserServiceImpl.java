@@ -41,7 +41,7 @@ private final UserRepo userRepo;
     @Override
     @Cacheable(value = "users", key = "'allUsers'")
     public List<UserResponseDto> getAllUsers() {
-        System.out.println("Fetching from DB...");
+        System.out.println("Fetching Data from DB...");
         return userRepo.findAll().stream()
                 .map(this::mapToDto)
                 .collect(Collectors.toList());
